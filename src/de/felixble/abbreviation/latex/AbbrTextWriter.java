@@ -9,9 +9,14 @@ import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 /**
+ * Class to write all abbreviations into a declaration
+ * tex-file.
+ *
  * Created by Felix on 07.01.2016.
  */
 public class AbbrTextWriter {
+
+    // TODO: we should not overwrite the existing file. Instead it would be better to replace the abbreviation declaration part.
 
     public static final String HEADER =
             "\\svnid{$Id$}\n" +

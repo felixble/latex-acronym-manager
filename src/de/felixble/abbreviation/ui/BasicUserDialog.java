@@ -6,6 +6,11 @@ import java.lang.reflect.Parameter;
 import java.util.*;
 
 /**
+ * Base class for a command like user dialog.
+ * <br>
+ * This class can be extended by specific implementation of the command methods.
+ * Each command method must have the {@link Command} annotation.
+ *
  * Created by Felix on 05.01.2016.
  */
 public class BasicUserDialog {

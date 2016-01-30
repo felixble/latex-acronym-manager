@@ -1,7 +1,11 @@
 package de.felixble.abbreviation.latex;
 
 
+import de.felixble.abbreviation.Abbreviation;
+
 /**
+ * Parser to create a {@link Abbreviation} Object from a string.
+ *
  * Created by Felix on 07.01.2016.
  */
 public class AbbrLineParser {
@@ -38,7 +42,6 @@ public class AbbrLineParser {
             case '}':
                 status = STATUS_IDLE;
                 addWord(currentWord);
-                //quotationOpen = !quotationOpen;
                 break;
             default:
                 if (status != STATUS_IDLE) {

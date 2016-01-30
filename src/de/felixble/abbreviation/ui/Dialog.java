@@ -11,6 +11,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 /**
+ * User - program interface.
+ *
  * Created by Felix on 07.01.2016.
  */
 public class Dialog extends BasicUserDialog {

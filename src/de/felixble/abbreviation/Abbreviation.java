@@ -3,14 +3,29 @@ package de.felixble.abbreviation;
 import java.util.Objects;
 
 /**
+ * Object represents a abbreviation.
+ *
  * Created by Felix on 07.01.2016.
  */
 public class Abbreviation {
 
+    /**
+     * The abbreviation.
+     */
     private String shortStr;
 
+    /**
+     * The written-out meaning.
+     */
     private String longStr;
 
+    /**
+     * Create a new abbreviation from its short and
+     * long form.
+     *
+     * @param shortStr abbreviation
+     * @param longStr written-out meaning
+     */
     public Abbreviation(String shortStr, String longStr) {
         this.shortStr = shortStr;
         this.longStr = longStr;
@@ -20,16 +35,8 @@ public class Abbreviation {
         return shortStr;
     }
 
-    public void setShortStr(String shortStr) {
-        this.shortStr = shortStr;
-    }
-
     public String getLongStr() {
         return longStr;
-    }
-
-    public void setLongStr(String longStr) {
-        this.longStr = longStr;
     }
 
     @Override
