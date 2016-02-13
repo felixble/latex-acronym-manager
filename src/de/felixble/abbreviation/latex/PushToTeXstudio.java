@@ -4,6 +4,10 @@ package de.felixble.abbreviation.latex;
 import java.io.IOException;
 
 /**
+ * Helper to insert a text block direct into the
+ * currently open file in TexStudio at the position
+ * of the cursor.
+ *
  * Created by Felix on 09.01.2016.
  */
 public class PushToTeXstudio {

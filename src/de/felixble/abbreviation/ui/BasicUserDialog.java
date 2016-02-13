@@ -15,6 +15,9 @@ import java.util.*;
  */
 public class BasicUserDialog {
 
+    private static final String CMD_EXIT = "exit";
+    private static final String CMD_USAGE_1 = "?";
+    private static final String CMD_USAGE_2 = "help";
 
     private class CmdInfo {
         private final Method method;
@@ -120,15 +123,19 @@ public class BasicUserDialog {
 
     private boolean executeSpecialCommand(String command) {
         switch (command) {
-            case "exit":
+            case CMD_EXIT:
                 goon = false;
                 onExitDialog();
                 return true;
 
-            case "?":
+            case CMD_USAGE_1:
+            case CMD_USAGE_2:
                 for (CmdInfo cmdInfo : commands.values()) {
                     System.out.println(cmdInfo.usage);
                 }
+                System.out.println(CMD_USAGE_2 + ": print usage");
+                System.out.println(CMD_USAGE_1 + ": print usage");
+                System.out.println(CMD_EXIT + ": exit program");
                 return true;
 
             default:
